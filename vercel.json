@@ -1,0 +1,30 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/x-token",
+      "destination": "/api/x"
+    },
+    {
+      "source": "/api/x-api",
+      "destination": "/api/x"
+    },
+    {
+      "source": "/api/facebook-token",
+      "destination": "/api/facebook"
+    },
+    {
+      "source": "/api/facebook-graph",
+      "destination": "/api/facebook"
+    },
+    {
+      "source": "/api/getyourguide",
+      "destination": "/api/mailchimp?service=getyourguide"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/daily-analytics-email",
+      "schedule": "0 12 * * *"
+    }
+  ]
+}
